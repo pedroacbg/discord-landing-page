@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: grid;
+  grid-template-areas: "title title" "text text" "button-one button-two";
+  background: url("../img/header.svg");
+  background-position: center;
+  background-size: cover;
+  padding-top: 80px;
+  height: 650px;
+  margin: auto;
+}
+
+.header img {
+  max-width: 100%;
+}
+
+.header h1 {
+  grid-area: title;
+  text-align: center;
+  align-self: center;
+  text-transform: uppercase;
+  font-family: "Luckiest Guy", cursive;
+  color: #fff;
+  font-size: 4rem;
+}
+
+.header p {
+  grid-area: text;
+  text-align: center;
+  align-self: flex-start;
+  justify-self: center;
+  font-family: "Open-sans";
+  font-size: 1rem;
+  line-height: 1.1rem;
+  color: #fff;
+  width: 690px;
+}
+
+.btn-download {
+  grid-area: button-one;
+  width: 210px;
+  height: 44px;
+  border: 1px solid #ccc;
+  padding: 0.6rem 1.3rem;
+  text-decoration: none;
+  border: 0;
+  align-self: flex-start;
+  justify-self: flex-end;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-right: 20px;
+  text-align: center;
+  color: #23272a;
+}
+
+.btn-download:hover {
+  background-color: #23272a;
+  color: #fff;
+}
+
+.btn-open {
+  grid-area: button-two;
+  width: 280px;
+  height: 44px;
+  border: 1px solid #ccc;
+  padding: 0.6rem 1.3rem;
+  text-decoration: none;
+  border: 0;
+  align-self: flex-start;
+  justify-self: flex-start;
+  background-color: #23272a;
+  border-radius: 20px;
+  margin-right: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.btn-open:hover {
+  background-color: #fff;
+  color: #23272a;
+}
